@@ -1,0 +1,1 @@
+<app-card *ngFor="let item of cards | keyvalue: orderByName" [card]="item.value" (deleteCard)="OnCardDelete($event)"></app-card>

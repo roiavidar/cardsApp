@@ -1,0 +1,10 @@
+<mat-card class="example-card" [style.background-color]="card.color">
+  <mat-card-content>
+    <div *ngFor="let item of card.data | keyvalue">
+      {{item.key}} : {{ item.value}}
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="OnDeleteClicked()">DELETE</button>
+  </mat-card-actions>
+</mat-card>
